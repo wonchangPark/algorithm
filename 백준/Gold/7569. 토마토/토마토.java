@@ -42,27 +42,24 @@ public class Main {
 
         int[][][] box = new int[N][M][H];
         boolean[][][] check = new boolean[N][M][H];
+        int unripe = 0;
+        // 익은 토마토 큐에 넣기 + 익지 않은 토마토의 개수 세기
+        Queue<Position> queue = new LinkedList<>();
         for(int h=0; h<H; h++){
             for(int i=0; i<N; i++){
                 st = new StringTokenizer(br.readLine());
                 for(int j=0; j<M; j++){
-                    box[i][j][h] = Integer.parseInt(st.nextToken());
-                }
-            }
-        } // box 완성
-
-        // 일단 익은 토마토 큐에 넣기
-        Queue<Position> queue = new LinkedList<>();
-        for(int h=0; h<H; h++){
-            for(int i=0; i<N; i++){
-                for(int j=0; j<M; j++){
-                    if(box[i][j][h] == 1) { // 익은 토마토인 경우 큐에 넣는다.
+                    int num = Integer.parseInt(st.nextToken());
+                    box[i][j][h] = num;
+                    if(num == 1){
                         queue.add(new Position(i, j, h, 0));
                         check[i][j][h] = true;
+                    } else if(num == 0){
+                        unripe++;
                     }
                 }
             }
-        }
+        } // box 완성
 
         int day = 0;
         // day가 지나면서 토마토가 익는 과정
@@ -83,23 +80,12 @@ public class Main {
                 check[nr][nc][nh] = true;
                 queue.add(new Position(nr,nc,nh, now.getDay()+1));
                 if(day < now.getDay()+1) day = now.getDay() + 1;
+                unripe--;
             }
         }
 
         // box 전체를 훑어서 아직 익지 않은 토마토가 있는 지 확인
-        // 만약 익지 않은 토마토가 있다면 -1을 출력
-        z: for(int h=0; h<H; h++){
-            for(int i=0; i<N; i++){
-                for(int j=0; j<M; j++){
-                    if(box[i][j][h] == -1) continue;
-                    if (!check[i][j][h]) { // 익거나 익지 않은 토마토 중에서 체크가 안되었다면 이쪽까지 왔지 않다는 뜻이므로 익지 않는 토마토가 존재
-                        day = -1;
-                        break z;
-                    }
-                }
-            }
-        }
-
+        if(unripe!=0) day = -1;
 
         System.out.println(day);
     }
