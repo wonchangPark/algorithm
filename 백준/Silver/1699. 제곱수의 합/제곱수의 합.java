@@ -1,9 +1,30 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
-// 문제 1699. 제곱수의 합
 public class Main {
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int[] memo = new int[100001];
+//
+//        int N = Integer.parseInt(br.readLine());
+//        int ans = dp(memo, N);
+//        System.out.println(ans);
+//    }
+//
+//    private static int dp(int[] memo, int n) {
+//        if(memo[n] != 0) return memo[n];
+//
+//        memo[n] = n;
+//        for(int i=1; i*i<=n; i++){
+//            int temp = dp(memo, n-i*i) + 1;
+//            if(memo[n] > temp) memo[n] = temp;
+//        }
+//        return memo[n];
+//    }
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
