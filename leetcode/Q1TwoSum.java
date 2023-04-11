@@ -49,5 +49,18 @@ public class Q1TwoSum {
             }
         }
 
+        // 세번째 방법: hash table에 넣을때도 검사
+        // 운이 좋아서 이미 hash table에 있는 경우엔 바로 리턴하도록 한다.
+//        Map<Integer, Integer> map = new HashMap<>();
+//
+//        for(int i=0; i<nums.length; i++){
+//            int num = target - nums[i];
+//            if(map.containsKey(num)){
+//                ans[0] = map.get(num);
+//                ans[1] = i;
+//            }
+//            map.put(i, nums[i]);
+//        }
+//
     }
 }
