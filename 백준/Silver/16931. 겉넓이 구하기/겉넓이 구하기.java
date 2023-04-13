@@ -20,10 +20,7 @@ public class Main {
         int ans = N*M*2; // 겉넓이
         for(int i=0; i<N; i++){
             for(int j=0; j<M; j++){
-                int num = board[i][j];
-                for(int k=1; k<=num; k++){
-                    ans += check(i, j, k, board, N, M);
-                }
+                ans += check(i, j, board, N, M);
             }
         }
 
@@ -35,7 +32,7 @@ public class Main {
     static int[] dr = {-1, 0, 1, 0};
     static int[] dc = {0, 1, 0, -1};
 
-    private static int check(int r, int c, int h, int[][] board, int n, int m) {
+    private static int check(int r, int c, int[][] board, int n, int m) {
         int sum = 0;
         // 6방향으로 체크한다.
         // 범위가 벗어나면 sum++ 해준다.
@@ -43,17 +40,12 @@ public class Main {
             int nr = r + dr[i];
             int nc = c + dc[i];
 
-            if(nr<0 || nr>=n || nc<0 || nc>=m){
-                sum++;
+            if(nr<0 || nr>=n || nc<0 || nc>=m) {
+                sum += board[r][c];
                 continue;
             }
-
-            if(h > board[nr][nc]){
-                sum++;
-            }
-
+            if(board[r][c] > board[nr][nc]) sum += (board[r][c] - board[nr][nc]);
         }
-
 
         return sum;
     }
