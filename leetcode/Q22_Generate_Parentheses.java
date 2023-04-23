@@ -6,5 +6,6 @@ public class Q22_Generate_Parentheses {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 
+
     }
 }
