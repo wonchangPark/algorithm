@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/1000. A＋B" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2775. 부녀회장이 될테야" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6996. 애너그램" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/1043. 거짓말" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1107. 리모컨" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1261. 알고스팟" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/13913. 숨바꼭질 4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1451. 직사각형으로 나누기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1525. 퍼즐" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/15486. 퇴사 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/16197. 두 동전" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/16928. 뱀과 사다리 게임" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1695. 팰린드롬 만들기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18428. 감시 피하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1918. 후위 표기식" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/19238. 스타트 택시" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2293. 동전 1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2294. 동전 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2573. 빙산" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7569. 토마토" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7662. 이중 우선순위 큐" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/9205. 맥주 마시면서 걸어가기" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
