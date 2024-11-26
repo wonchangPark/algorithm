@@ -22,7 +22,6 @@ public class 지뢰찾기 {
             }
         }
 
-        int mineCount = 0;
 
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
@@ -31,6 +30,8 @@ public class 지뢰찾기 {
                 }
             }
         }
+
+        int mineCount = 0;
 
         for(int i=0; i<N; i++) {
             for(int j=0; j<N; j++) {
