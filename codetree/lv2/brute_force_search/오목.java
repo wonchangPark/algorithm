@@ -86,7 +86,7 @@ public class 오목 {
         return new Stone(middleX, middleY, board[startX][startY]);
     }
 
-    public static int[][] readBoard() throws IOException {
+    private static int[][] readBoard() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[][] board = new int[SIZE][SIZE];
         for(int i=0; i<SIZE; i++) {
